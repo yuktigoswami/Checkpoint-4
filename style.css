@@ -191,11 +191,11 @@ header .nav ul li:hover .dropdown-menu ul li {
 }
 /* Hero */
 .hero {
-	background: linear-gradient(rgba(81, 69, 69, 0.692), rgba(53, 52, 52, 0.692)), url("hero-bg.jpg")no-repeat;
+	background: linear-gradient(rgba(81, 69, 69, 0.692), rgba(53, 52, 52, 0.692)), url("media/hero-bg.jpg")no-repeat;
 	background-size: cover;
 	height: 100vh;
 }
-.hero header {
+.hero h1 {
 	font-size: 3.2rem;
 	font-weight: 800;
 	color: #fff;
@@ -471,7 +471,7 @@ header .nav ul li:hover .dropdown-menu ul li {
 }
 /* Testimonials */
 .testimonials {
-	background: linear-gradient(rgba(18, 17, 19, 0.5),rgba(18, 17, 19, 0.5)), url("testimonials-bg.jpg")no-repeat;
+	background: linear-gradient(rgba(18, 17, 19, 0.5),rgba(18, 17, 19, 0.5)), url("media/testimonials-bg.jpg")no-repeat;
 	background-size: cover;
 }
 .testimonials img {
@@ -604,23 +604,23 @@ header .nav ul li:hover .dropdown-menu ul li {
 	margin-top: 20px;
 	text-align: center;
 }
-.team .photo .links ul li {
+.team .photo .links li {
 	color: black;
 	font-size: 1.6rem;
+	margin-right: 20px;
 }
 .team .photo .links {
 	background-color: rgba(255, 255, 255, 0.492);
-	position: relative;
-	top: -71px;
-	z-index: 2;
-	padding: 10px 50px;
+	width: 300px;
 }
 .links {
-	display: ;
+	display:none ;
+    position: absolute;
+	z-index: 2;
+	top: 249px;
 }
-.team .photo .links:hover img {
-	display: inline-block;
-	position: absolute;
+.team .photo:hover .links{
+	display: flex;
 }
 .team article {
 	background-color: #fff;
@@ -644,6 +644,7 @@ header .nav ul li:hover .dropdown-menu ul li {
 }
 .photo {
 	padding-top: 50px;
+	position: relative;
 }
 .team .photo img {
 	width: 300px;
@@ -1042,8 +1043,7 @@ footer .top-btn {
 		flex-direction: column;
 	}
 	.sm-flex-50 {
-		flex: 0 1 50%;
-		margin-left: 1rem;
+		flex: 0 1 44%;
 	}
 	.flex-100 {
 		flex: 0 1 100%;
@@ -1103,6 +1103,9 @@ footer .top-btn {
 	.hero .arrow span {
 		margin-left: -172px;
 	}
+	.portfolio img {
+		width: 313px;
+	}
 	.portfolio ul .web {
 		margin-right: 20%;
 	}
@@ -1114,30 +1117,30 @@ footer .top-btn {
 		margin-right: -50px;
 	}
 	.value img {
-		width: 380px;
+		width: 325px;
 	}
 	.value article {
-		width: 23rem;
+		width: 19rem;
 		margin-top: 30px;
 	}
 	.testimonials {
 		margin-top: -134px;
 	}
 	.about iframe{
-		width: 828px;
+		width: 692px;
 	}
 	.client img, .hover .client-1 img {
 		width: 80px;
 		margin-top: 30px;
 	}
 	.service article {
-		width: 366px;
+		width: 325px;
 	}
 	.service a i {
 		margin-left: 43%;
 	}
 	.team .photo img {
-		width: 400px;
+		width: 325px;
 	}
 	.pricing .box button {
 		padding: 0.8rem 5rem;
@@ -1145,13 +1148,16 @@ footer .top-btn {
 	.pricing button {
 		background-color: #dedcdc;
 		border: 0;
-		width: 400px;
+		width: 325px;
 	}
 	.pricing .box {
-		width: 400px;
+		width: 325px;
 	}
 	.faq article:hover .drop-down p {
 		margin-left: -120px;
+	}
+	.contact {
+		margin-left: 0;
 	}
 	.contact .box-1 {
 		margin-left: 0;
@@ -1227,11 +1233,8 @@ footer .top-btn {
 		top: 0;
 		z-index: 99;
 	}
-	.brand {
-		left: ;
-	}
 	.bars {
-		right: 6rem;
+		right: 12rem;
 	}
 	.nav-item {
 		margin: 16px 0;
@@ -1277,6 +1280,12 @@ footer .top-btn {
 	.container {
 		max-width: 540px;
 	}
+	.sm-flex-100 {
+		flex: 0 1 100%;
+	}
+	header .bars {
+		right: 6rem;
+	}
 	.hero .arrow {
 		margin-left: -16px;
 	}
@@ -1284,29 +1293,58 @@ footer .top-btn {
 		margin-left: -146px;
 	}
 	.about iframe{
-		width: 395px;
+		width: 281px;
 	}
 	.value img {
-		width: 402px;
+		width: 278px;
 		-o-object-fit: cover;
 		object-fit: cover;
 	}
 	.value article {
-        width: 360px;
+        width: 228px;
 		margin-left: 20px;
+		margin-top: 49px;
+	}
+	.client img {
+		width: 40px;
+	}
+	.service article {
+		width: 278px;
+	}
+	.portfolio img {
+		width: 278px;
+	}
+	.portfolio ul .all {
+		margin-left: 5%;
 	}
 	.team .photo img {
-		width: 400px;
+		width: 278px;
 		-o-object-fit: cover;
 		object-fit: cover;
 	}
 	.team .photo article {
-		width: 400px;
+		width: 278px;
 	}
 	.team .photo .links {
 		width: 400px;
 	}
 	.team .photo ul li i {
 		font-size: 17px;
+	}
+	.pricing .box {
+		width: 278px;
+	}
+	.pricing button {
+		width: 280px;
+	}
+	footer .footer-box button {
+		border: 1px solid var(--primary);
+		border-radius: 30px;
+		background-color: #fff;
+		width: 224px;
+		margin-bottom: 10px;
+	}
+	footer nav {
+		margin-left: 4%;
 	}
 }
